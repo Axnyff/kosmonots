@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Brandon';
+  src: url('./fonts/brandon-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Myriad';
+  src: url('./fonts/myriad.otf') format('opentype');
+}
+
+body {
+  font-family: 'Myriad', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+  min-height: 100dvh;
+  color: white;
+  word-break: keep-all;
+  background-image: url('images/nuit.png');
+}
+
+section {
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+section#first-section {
+  padding-bottom: 2rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin: 0 auto;
+  height: calc(100dvh - 80px);
+  background-image: url('images/lune-demi.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  max-width: 100vw !important;
+}
+
+#moon {
+  height: calc(30dvh);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  left: 0;
+}
+
+section#kontakt {
+  padding-bottom: 30rem;
+  background-image: url('images/footer.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 100vw;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  font-family: 'Brandon';
+  color: white;
+  font-size: 50px;
+  line-height: 0.8;
+  width: fit-content;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  font-size: 35px;
+  padding-bottom: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.01rem;
+  padding-top: 1rem;
+  margin-top: -1rem;
+  margin: 0 auto;
+}
+
+hr {
+  width: 100%;
+  height: 4px;
+  background: white;
+}
+
+#nav-container {
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 0.5rem;
+}
+
+nav {
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 3rem;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+  background: black;
+  width: fit-content;
+}
+
+nav a {
+  font-family: 'Brandon';
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    gap: 2rem;
+    letter-spacing: initial;
+  }
+  h1,
+  h2 {
+    letter-spacing: 0.5rem;
+    font-size: 35px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  .carrousel {
+    width: 100vw !important;
+  }
+  .break {
+    display: none;
+  }
+
+  section {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+  .flex {
+    flex-direction: column;
+    justify-content: flex-start !important;
+  }
+  p {
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  #zen,
+  #dab {
+    display: none;
+  }
+  section#first-section {
+    background-image: url('images/lune-full.png');
+    background-size: auto 40dvh;
+
+  }
+}
+
+.sep {
+  margin-bottom: 1rem;
+}
+.sep-2 {
+  margin-bottom: 2rem;
+}
+
+
+ul {
+  display: flex;
+}
+
+small {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.mail {
+  color: white;
+}
+
+.presse {
+  color: white;
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+  margin: 0 auto;
+  max-width: 750px;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 0;
+  vertical-align: middle;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: 'Brandon';
+  text-transform: uppercase;
+}
+
+#dab {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 100;
+}
+
+#zen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: 475px;
+  z-index: 100;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
+}
+
+.svg {
+  width: 31px;
+  height: 31px;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.display {
+  display: grid;
+  max-width: 550px;
+  margin: auto;
+  grid-template:
+    'a a a'
+    'b c c'
+    'd d e';
+  position: relative;
+}
+
+.display:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.display:hover .show {
+  display: block;
+}
+
+.display > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.display > img:first-child {
+  grid-area: a;
+}
+
+.display > img:nth-child(2) {
+  grid-area: b;
+}
+
+.display > img:nth-child(3) {
+  grid-area: c;
+}
+
+.display > img:nth-child(4) {
+  grid-area: d;
+}
+.display > img:nth-child(5) {
+  grid-area: e;
+}
+
+.overlay {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.7;
+}
+
+.carrousel {
+  z-index: 1000;
+  position: fixed;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 80dvh;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  overflow: hidden;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.carrousel > * {
+  pointer-events: all;
+}
+
+.carrousel img {
+  object-fit: contain;
+}
+
+.carrousel .main {
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.carrousel .close {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.carrousel button {
+  flex-shrink: 0;
+  width: 31px;
+  height: 31px;
+  background: black;
+  border-radius: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.previous {
+  transform: rotate(-180deg);
+}
+
+.show {
+  width: 50px !important;
+  height: 50px !important;
+  display: none;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.dot-container {
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  width: 100px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: rgba(229, 218, 199, 0.45);
+  cursor: pointer;
+  border: none;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: rgb(229, 218, 199);
+}
+
+.no-under {
+  text-decoration: none !important;
+}
+
+.spin {
+  animation: spin linear infinite 1s;
+}

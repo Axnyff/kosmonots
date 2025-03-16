@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>La fanfare Kosmonot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <img
+      id="dab"
+      src="images/dab.avif"
+      alt=""
+      style="width: 139px; height: 205px; object-fit: cover"
+      width="139"
+      height="205"
+      loading="lazy"
+    />
+    <img
+      id="zen"
+      src="images/zen.avif"
+      alt=""
+      style="
+        width: 125px;
+        height: 140px;
+        object-fit: cover;
+        object-position: 50% 50%;
+      "
+      width="125"
+      height="140"
+      loading="lazy"
+    />
+    <section id="first-section">
+      <h1>
+        KOSMONOT
+        <hr />
+        FANFARE
+      </h1>
+    </section>
+    <div id="nav-container">
+      <nav>
+        <a href="#ki">KI ?</a>
+        <a href="#koi">KOI ?</a>
+        <a href="#komment">KOMMENT ?</a>
+        <a href="#kontakt">KONTAKT ?</a>
+      </nav>
+    </div>
+    <section id="ki">
+      <h2>KI ?</h2>
+      <p class="sep-2">
+        Formation acoustique de 10 à 20 cuivres ! Fanfare des Beaux-arts de
+        Paris since 1987 !
+      </p>
+      <div class="display">
+        <img
+          src="images/Kosmonot-Concours-2022.jpg"
+          alt="Les Kosmonots au concours de fanfare des bozarts de 2022"
+        />
+        <img
+          src="images/Kosmonot-Assignat-01.jpg"
+          alt="Les Kosmonots à l'assignat"
+        />
+        <img
+          src="images/Kosmonot-Concours-2015.jpg"
+          alt="Les Kosmonots au concours de fanfare des bozarts de 2015"
+        />
+        <img
+          src="images/Kosmonot-Montpellier-07.jpg"
+          alt="Les Kosmonots au festival de fanfare de Montpellier en 2023"
+        />
+        <img
+          src="images/Kosmonot-Harmony-cafe-03.jpg"
+          alt="Les Kosmonots à l'Harmony Café"
+        />
+        <img src="icons/plus.svg" class="show" />
+      </div>
+      <div class="carrousel hidden">
+        <button class="previous" type="button">
+          <img class="play-icon" src="icons/play.avif" alt="" />
+        </button>
+        <img src="images/Kosmonot-Assignat-01.jpg" class="main" />
+        <button class="next" type="button">
+          <img class="play-icon" src="icons/play.avif" alt="" />
+        </button>
+        <button class="close" type="button">
+          <img src="icons/cross.svg?" class="cross svg" />
+        </button>
+      </div>
+      <div class="overlay hidden"></div>
+    </section>
+    <section id="koi">
+      <h2>KOI ?</h2>
+      <div class="flex">
+        <div>
+          <img
+            class="image"
+            src="images/phono.avif"
+            alt=""
+            style="
+              width: 279px;
+              height: 252px;
+              object-fit: cover;
+              object-position: 50% 50%;
+            "
+            width="279"
+            height="252"
+          />
+        </div>
+        <div>
+          <button type="button" class="play" data-play="sound/bitok.m4a">
+            <img src="icons/spinner.svg?" class="spin svg spin hidden" />
+            <img src="icons/cross.svg?" class="cross svg hidden" />
+            <img
+              class="play-icon"
+              src="icons/play.avif"
+              alt=""
+              style="
+                width: 31px;
+                height: 31px;
+                object-fit: cover;
+                object-position: 50% 50%;
+              "
+              width="31"
+              height="31"
+              loading="lazy"
+            />History repeating
+          </button>
+          <button type="button" class="play" data-play="sound/life.mp3">
+            <img src="icons/spinner.svg?" class="spin svg spin hidden" />
+            <img src="icons/cross.svg?" class="cross svg hidden" />
+            <img
+              class="play-icon"
+              src="icons/play.avif"
+              alt=""
+              style="
+                width: 31px;
+                height: 31px;
+                object-fit: cover;
+                object-position: 50% 50%;
+              "
+              width="31"
+              height="31"
+              loading="lazy"
+            />Life on mars
+          </button>
+          <button type="button" class="play" data-play="sound/cat.mp3">
+            <img src="icons/spinner.svg?" class="spin svg spin hidden" />
+            <img src="icons/cross.svg?" class="cross svg hidden" />
+            <img
+              class="play-icon"
+              src="icons/play.avif"
+              alt=""
+              style="
+                width: 31px;
+                height: 31px;
+                object-fit: cover;
+                object-position: 50% 50%;
+              "
+              width="31"
+              height="31"
+              loading="lazy"
+            />The cat
+          </button>
+          <button type="button" class="play" data-play="sound/salsa.mp3">
+            <img src="icons/spinner.svg?" class="spin svg spin hidden" />
+            <img src="icons/cross.svg" class="cross svg hidden" />
+            <img
+              class="play-icon"
+              src="icons/play.avif"
+              alt=""
+              style="
+                width: 31px;
+                height: 31px;
+                object-fit: cover;
+                object-position: 50% 50%;
+              "
+              width="31"
+              height="31"
+              loading="lazy"
+            />La salsa du démon
+          </button>
+          <button type="button" class="play" data-play="sound/yasabes.mp3">
+            <img src="icons/spinner.svg?" class="spin svg spin hidden" />
+            <img src="icons/cross.svg" class="cross svg hidden" />
+            <img
+              class="play-icon"
+              src="icons/play.avif"
+              alt=""
+              style="
+                width: 31px;
+                height: 31px;
+                object-fit: cover;
+                object-position: 50% 50%;
+              "
+              width="31"
+              height="31"
+              loading="lazy"
+            />Ya sabès
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="komment">
+      <h2>KOMMENT ?</h2>
+      <p class="sep-2">
+        La Fanfare Kosmonot joue partout où le vide empêche la vie de se
+        développer, en intérieur comme en extérieur, en fixe ou en déambulation,
+        pour tous types d'évènements festifs publics ou privés.
+      </p>
+      <p class="sep-2">
+        Un répertoire zéro-déchet de reprises up-cyclées, allant du funk au ska,
+        rock, disco, mambo, country, java-musette, afrobeat…
+      </p>
+
+      <div class="sep-2">
+        <div class="container">
+          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube.com/embed/mqAgzUP7PZw?si=e3d_bcVpcj9FoGxB"
+            title="YouTube video player"
+            frameborder="0"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br />
+        <small id="legend">“History Repeating“ au James Hetfeeld's Pub</small>
+        <div class="dot-container">
+          <button data-index="0" class="dot active"></button>
+          <button data-index="1" class="dot"></button>
+          <button data-index="2" class="dot"></button>
+          <button data-index="3" class="dot"></button>
+        </div>
+      </div>
+    </section>
+    <section id="kontakt">
+      <h2>KONTAKT ?</h2>
+      <p class="sep">
+        Besoin d'une fanfare pour animer vos évènements ? Public ou privé,
+        n'hésitez pas à nous contacter pour plus d'infos !
+      </p>
+      <a class="mail" href="mailto:contact@kosmonot.com"
+        >contact@kosmonot.com</a
+      >
+      <div class="sep">Manu (tpt) : +33 6 09 78 04 79 <br /></div>
+
+      <div class="sep">
+        <a
+          class="presse"
+          href="dossier-presse-kosmique.pdf"
+          target="_blank"
+          rel="noopener"
+          >téléchargez ici notre dossier de presse</a
+        >
+      </div>
+      <a
+        class="no-under"
+        href="https://www.instagram.com/kosmo_fanfare/"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          alt="Instagram"
+          style="width: 39px; height: 39px; object-fit: cover"
+          src="icons/insta.avif"
+        />
+      </a>
+      <a
+        class="no-under"
+        href="https://www.facebook.com/KOSMONOT/"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          alt="Facebook"
+          style="width: 39px; height: 39px; object-fit: cover"
+          src="icons/fb.avif"
+        />
+      </a>
+      <a
+        class="no-under"
+        href="https://www.youtube.com/@kosmonotfanfare4099"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          alt="YouTube"
+          style="width: 39px; height: 39px; object-fit: cover"
+          src="icons/youtube.avif"
+        />
+      </a>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
