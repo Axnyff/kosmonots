@@ -435,3 +435,28 @@ iframe {
 .spin {
   animation: spin linear infinite 1s;
 }
+
+.language {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.language button:first-child img {
+  width: 20px;
+  height: auto;
+}
+
+.language button:nth-child(2) img {
+  width: 30px;
+  height: auto;
+}
+
+.language button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

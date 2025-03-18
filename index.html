@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>La fanfare Kosmonot</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Kosmonot</title>
+    <link rel="stylesheet" href="style.css?v1" />
     <link rel="icon" type="image/x-icon" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -32,27 +32,35 @@
       height="140"
       loading="lazy"
     />
+    <div class="language">
+      <button type="button" data-lang="fr">
+        <img alt="Traduire en français" src="icons/fr.png" />
+      </button>
+      <button type="button" data-lang="uk">
+        <img alt="Translate in english" src="icons/uk.png" />
+      </button>
+    </div>
     <section id="first-section">
       <h1>
         KOSMONOT
         <hr />
-        FANFARE
+        <span id="fanfare">FANFARE</span>
       </h1>
     </section>
     <div id="nav-container">
       <nav>
-        <a href="#ki">KI</a>
-        <a href="#koi">KOI</a>
-        <a href="#komment">KOMMENT</a>
-        <a href="#kontakt">KONTAKT</a>
+        <a id="kiAnchor" href="#ki">KI</a>
+        <a id="koiAnchor" href="#koi">KOI</a>
+        <a id="kommentAnchor" href="#komment">KOMMENT</a>
+        <a id="kontaktAnchor" href="#kontakt">KONTAKT</a>
       </nav>
     </div>
     <section id="ki">
-      <h2>KI</h2>
-      <p class="">
+      <h2 id="kiTitle">KI</h2>
+      <p id="ki1" class="">
       Fanfare des Beaux-arts de Paris depuis 1988, la fanfare Kosmonot est une formation acoustique composée de 10 à 20 musiciens.<br>
       </p>
-      <p class="sep-2">
+      <p id="ki2" class="sep-2">
       D'interprétations musclées au choix d'un répertoire aiguisé c'est une institution reconnue pour la qualité de ses prestations.
       </p>
       <div class="display">
@@ -93,8 +101,8 @@
       <div class="overlay hidden"></div>
     </section>
     <section id="koi">
-      <h2>KOI</h2>
-      <p class="sep-2">
+      <h2 id="koiTitle">KOI</h2>
+      <p id="koi1" class="sep-2">
         Un répertoire riche de reprises délicieusement arrangées, alliant funk, ska, rock, disco, mambo, country, java-musette, salsa, afrobeat…
       </p>
       <div class="flex">
@@ -208,11 +216,11 @@
       </div>
     </section>
     <section id="komment">
-      <h2>KOMMENT</h2>
-      <p class="sep-2">
+      <h2 id="kommentTitle" >KOMMENT</h2>
+      <p id="komment1" class="sep-2">
 La fanfare Kosmonot joue partout pour perpétuer le sens du rire, du spectacle et de la fête.
       </p>
-      <p class="sep-2">
+      <p id="komment2" class="sep-2">
       Pour tout type d'évènement, en intérieur comme en extérieur, en fixe et en déambulation, en public ou en privé, les Kosmonots sont une évidente nécessité.
       </p>
 
@@ -239,8 +247,8 @@ La fanfare Kosmonot joue partout pour perpétuer le sens du rire, du spectacle e
       </div>
     </section>
     <section id="kontakt">
-      <h2>KONTAKT</h2>
-      <p class="se">
+      <h2 id="kontaktTitle">KONTAKT</h2>
+      <p id="kontakt1" class="se">
         Besoin d'une fanfare pour animer vos évènements ? Public ou privé,
         n'hésitez pas à nous contacter pour plus d'infos !
       </p>
@@ -302,6 +310,6 @@ La fanfare Kosmonot joue partout pour perpétuer le sens du rire, du spectacle e
         />
       </a>
     </section>
-    <script src="main.js"></script>
+    <script src="main.js?v2"></script>
   </body>
 </html>
